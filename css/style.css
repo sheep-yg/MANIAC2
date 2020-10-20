@@ -1,0 +1,106 @@
+	@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: normal; font-style: normal;}
+    @font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+	@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+    body {width:100%, height:100% !important;
+    	margin: 0 auto; font-family: 'NEXON Lv1 Gothic OTF Light';
+    }
+    img {display: block; position: absolute; line-height: 2px;}
+
+	.shake {animation: 0.8s shake infinite alternate; }
+	.shake2 {animation: 3s shake2 infinite alternate; 
+	animation-timing-function: ease-in;}
+	.shake3 {animation: 2s shake3 infinite alternate; }
+	/*shake2 수정해서 다른 흔들림+미친듯한 움직임으로 바꾸기*/
+
+
+	.whiteani {animation: 2s line infinite alternate; }
+
+
+	@keyframes shake { 
+	0% { transform: skewX(-15deg) rotate(-30deg); }
+	5% { transform: skewX(15deg) rotate(-13deg); }
+	10% { transform: skewX(-15deg) rotate(-13deg); }
+	15% { transform: skewX(15deg) rotate(4deg); }
+	20% { transform: skewX(0deg) rotate(-13deg) }
+	100% { transform: skewX(0deg) rotate(-13deg); } }
+
+	@keyframes line { 
+	0% { opacity: 0%;transform: skewX(-15deg) rotate(20deg);}
+	20% { opacity: 50%; transform: skewX(15deg); }
+	60% { opacity: 20%; transform: skewX(-15deg)rotate(-10deg);}
+	100% { opacity: 100%;transform: skewX(0deg);} 
+	}
+
+	@keyframes shake2 { 
+	0% { transform: skewX(-15deg); }
+	20% { transform: skewX(15deg); }
+	35% { transform: rotate(-15deg); bottom: -10px; }
+	70% { transform: rotate(0deg); bottom: -20px; }
+	100% { transform: skewX(10deg); bottom: 0px; } }
+
+	@keyframes shake3 {
+	0% {transform:skew(15deg); }
+	20% {transform: skew(-5deg) rotate(10deg);}
+	60% { transform: rotate(15deg); left: 6%; bottom: 19%; }
+	100% {transform: skew(0deg) rotate(-2deg); left: 4%; bottom: 17%;}
+	}
+	/*easyease로 바꿀 수 있었던 거 같은데 그런 기능 생각나면 추가...*/
+
+
+	.img10 {width: 10% !important;}
+	.img13 {width: 13% !important;}
+	.img15 {width: 15% !important;}
+	.img20 {width: 20% !important;}
+	.img30 {width: 30% !important;}
+	.img40 {width: 40% !important;}
+
+	.btnBox {width:200px; height: 100px; position: relative; top: 50%; left: calc(50% - 495px / 2); z-index: 30;}
+    .btnBox p {font-size: 8em;
+	color: red; font-family: 'NEXON Lv1 Gothic OTF Bold';}
+
+
+	.all {width: 100%; height: 100%;
+		background-color: white;}
+	.bg {background-color: black;}
+
+
+	.rose {bottom: 0%; right: 16%;}
+	.heart {right: 10%; top: 5%;}
+	.youre {top: 30%;left: 39%;}
+	.person {bottom: 0%; left: calc(50% - 350px); width: 700px !important;}
+	.gun {left: 4%; bottom: 17%;}
+	.tkq {left: 8%;}
+	.back {bottom: 21%; left: 7%; width: 330px;}
+	.weapon {bottom: 0%; left: 19%;}
+	.whiteline {height: 100%;}
+
+	.gray{bottom: 40%; left: calc(50% - 193px / 2); position: absolute;z-index: 40;
+		color: white; font-size: 2em;font-family: 'NEXON Lv1 Gothic OTF Bold'}
+	.text {text-align: center; margin: auto; color: white; position: absolute;top: 10%;left: calc(50% - 992px / 2); z-index: 40;line-height: 22px; font-family: 'NEXON Lv1 Gothic OTF';}
+	.textBox{width: 100%; height: 100%; margin: auto;}
+	.footer {color: white; text-align: center; position: absolute;bottom: 5%; left: calc(50% - 290px / 2); z-index: 50; font-size: 0.7rem;line-height: 18px; word-spacing: -0.3px;}
+
+	@keyframes opacity { 
+	0% {filter: blur(0px); opacity: 100%;}
+	100% {filter: blur(30px); opacity:0%;} }
+	.op-0 {animation: .8s opacity forwards;
+	animation-timing-function: ease-in-out; }
+
+	@keyframes bgmoves {
+		0% {opacity: 0%}
+		100% {opacity: 100%}
+	}
+	.bgmove { animation: 1.5s bgmoves; 
+	animation-timing-function: ease-in-out; }
